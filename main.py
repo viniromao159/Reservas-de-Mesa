@@ -1,9 +1,4 @@
-# Usuario escolhe a quantidade de mesas disponiveis no estabelecimento.
-# Usuario informa o inicio e o fim do funcionamento. 
-# 
-# Menu apresenta as opções: 1) Adicionar ou remover mesas disponiveis. 2) Adicionar ou remover reservas de mesas. 3) Sair do programa.
-# 1) Adiciona ou remove mesas disponiveis pra reservar.
-# 2) Oferece a opção de reservar a mesa e o horario. Programa apresenta as mesas disponiveis e seus respectivos horarios.
+
 from funcionalidades import *
 
 #Programa principal
@@ -40,14 +35,14 @@ while True:
         while isTrue:
             mostrar_mesas()
             ad_rm_reserva(op_menu)
-            continuar()
+            isTrue = continuar()
 
     elif op_menu == '4':
         isTrue = True
         while isTrue:
             mostrar_mesas()
             ad_rm_reserva(op_menu)
-            continuar()
+            isTrue = continuar()
             
     else:
         print("Valor inválido")

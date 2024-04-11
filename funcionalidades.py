@@ -126,4 +126,6 @@ def continuar():
         print('Valor incorreto!')
         continuar = input("Deseja continuar [s/n]: ").strip().lower()
     if continuar == 'n':
-        isTrue = False
+        return False
+    else:
+        return True
